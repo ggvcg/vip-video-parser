@@ -1,0 +1,51 @@
+{
+  "name": "vip-video-parser",
+  "version": "1.0.0",
+  "description": "VIP视频解析工具",
+  "main": "main.js",
+  "author": "VIP Video Parser Team",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.vip.videoparser",
+    "productName": "VIP视频解析工具",
+    "files": [
+      "**/*",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}"
+    ],
+    "extraResources": [
+      {
+        "from": "VIP.py",
+        "to": "app/VIP.py"
+      },
+      {
+        "from": "version.json",
+        "to": "app/version.json"
+      }
+    ],
+    "asar": true,
+    "win": {
+      "target": "nsis",
+      "icon": "portfolio.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^27.1.0",
+    "electron-builder": "^24.9.1"
+  }
+}

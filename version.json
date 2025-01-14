@@ -1,0 +1,15 @@
+{
+    "version": "1.0.2",
+    "release_date": "2024-03-20",
+    "description": "VIP视频解析工具",
+    "file_hash": "f248ffda9a850a5b9764cee52b14db66",
+    "file_size": "16.2 MB",
+    "changelog": [
+        "支持多个视频网站解析",
+        "多线路解析支持",
+        "历史记录功能",
+        "异步处理优化"
+    ],
+    "download_url": "http://47.122.133.57:8000/downloads/vip-parser/latest/vip-parser-setup.exe",
+    "force_update": false
+}

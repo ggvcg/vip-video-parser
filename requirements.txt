@@ -1,0 +1,5 @@
+tkinter>=8.6
+paramiko>=2.8.1
+requests>=2.26.0
+humanize>=3.13.1
+pyperclip>=1.8.2 
